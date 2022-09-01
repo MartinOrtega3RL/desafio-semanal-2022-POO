@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Tp1/style.css">
+    <title>Ta-Te-TI</title>
+    <script src="../Tp1/juego.js"></script>
+</head>
+<body>
+    <header class="header">
+
+        Ta-Te-Ti
+
+    </header>
+    
+    <br>
+    <br>
+    
+    <section id="principal">
+        <article id="comandos">
+            Jugador1:
+            <input type="text" id="Jugador1" ><br>
+            Jugador2:
+            <input type="text" id="Jugador2"><br>
+            <input type="button" onclick="juego()" id="IniciarJuego" value="Comenzar Juego">
+            <label id="TurnoJugador"></label>
+        </article>
+
+        <article id="tablero" class="boton">
+            <input type="button" id="P0" onclick="simbolo(this)">   <!--Primera Fila-->
+            <input type="button" id="P1" onclick="simbolo(this)">
+            <input type="button" id="P2" onclick="simbolo(this)"><br>
+
+            <input type="button" id="P3" onclick="simbolo(this)"> <!--Segunda Fila-->
+            <input type="button" id="P4" onclick="simbolo(this)">
+            <input type="button" id="P5" onclick="simbolo(this)"><br>
+
+            <input type="button" id="P6" onclick="simbolo(this)"> <!-- Tercera Fila--> 
+            <input type="button" id="P7" onclick="simbolo(this)">
+            <input type="button" id="P8" onclick="simbolo(this)"><br>
+        </article>
+    </section>
+</body>
+</html>
